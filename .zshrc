@@ -77,7 +77,9 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 #
 #
-. ~/.zsh_aliases
+if [[ -e ~/.zsh_aliases ]]; then
+	. ~/.zsh_aliases
+fi
 
 setopt PROMPT_SUBST
 PROMPT='${vcs_info_msg_0_}%F{cyan}%T%f %B%F{green}%n@%m%k %B%F{blue}%1~ %# %b%f'

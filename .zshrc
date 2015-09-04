@@ -9,7 +9,7 @@ select-word-style bash # ctrl+w on words
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' formats "%{$fg[green]%}%c%{$fg[green]%}%u%{$reset_color%} [%{$fg[yellow]%}%b%{$reset_color%}] %{$fg[yellow]%}%s%{$reset_color%}:%r "
+zstyle ':vcs_info:*' formats "[%{$fg[yellow]%}%b%{$reset_color%}] %{$fg[green]%}%c%{$fg[green]%}%u%{$reset_color%} "
 precmd() {  # run before each prompt
   vcs_info
 }

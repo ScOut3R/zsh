@@ -87,5 +87,5 @@ if [[ $USER == "root" ]]; then
 fi
 
 setopt PROMPT_SUBST
-PROMPT='${vcs_info_msg_0_}%F{cyan}%T%f %B%F{green}%n@%m%k %B%F{blue}%1~ %# %b%f'
+PROMPT='${vcs_info_msg_0_}%F{cyan}%T%f %B%F{$color}%n@%m%k %B%F{blue}%1~ %# %b%f'
 
